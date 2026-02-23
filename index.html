@@ -6,7 +6,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<title>목표 플래너</title>
+<title>Planner</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iI2U1YjhkMyIvPjwvc3ZnPg==">
 <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iI2U1YjhkMyIvPjwvc3ZnPg==">
 <style>
@@ -263,11 +263,11 @@ html,body{background:var(--bg);color:var(--text);font-family:Arial,sans-serif;fo
 
 <!-- LOGIN -->
 <div class="login-screen" id="loginScreen">
-  <div class="login-title">목표 플래너</div>
-  <div class="login-sub">Google 계정으로 로그인하면<br>모든 기기에서 동기화돼요</div>
+  <div class="login-title">Planner</div>
+  <div class="login-sub">Login with Google Account<br>Start your productive life</div>
   <button class="login-btn" id="loginBtn">
     <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
-    Google로 로그인
+    Login With Google
   </button>
 </div>
 
@@ -286,16 +286,16 @@ html,body{background:var(--bg);color:var(--text);font-family:Arial,sans-serif;fo
   <!-- OPTION MENU -->
   <div class="option-menu" id="optionMenu">
     <div class="option-item" id="optAccountBtn">
-      계정 관리
-      <div class="opt-sub" id="optAccountSub">이름 · 모토 · 로그아웃</div>
+      Account
+      <div class="opt-sub" id="optAccountSub">Name · Motto · Logout</div>
     </div>
     <div class="option-item" id="optColorBtn">
-      선택 색상 변경
-      <div class="opt-sub">하이라이트 컬러</div>
+      Color
+      <div class="opt-sub">Change Color</div>
     </div>
     <div class="option-item" id="optCalBtn">
-      달력
-      <div class="opt-sub">월별 목표 달력</div>
+      Calendar
+      <div class="opt-sub">overeview</div>
     </div>
   </div>
 
@@ -343,34 +343,34 @@ html,body{background:var(--bg);color:var(--text);font-family:Arial,sans-serif;fo
 <!-- ACCOUNT PAGE -->
 <div class="side-page" id="accountPage">
   <div class="side-header">
-    <span class="side-title">계정 관리</span>
+    <span class="side-title">Account Setting</span>
     <span class="side-close" id="accountClose">✕</span>
   </div>
   <div class="side-body">
-    <div class="account-avatar" id="accountAvatar">?</div>
+    <div class="account-avatar" id="accountAvatar">:)</div>
     <div class="account-field">
-      <div class="account-label">계정 이름</div>
-      <input class="account-input" id="accountName" placeholder="이름을 입력하세요" autocomplete="off"/>
+      <div class="account-label">Name</div>
+      <input class="account-input" id="accountName" placeholder="Write your name" autocomplete="off"/>
     </div>
     <div class="account-field">
-      <div class="account-label">모토</div>
-      <input class="account-input" id="accountMotto" placeholder="나의 모토를 입력하세요" autocomplete="off"/>
+      <div class="account-label">Motto</div>
+      <input class="account-input" id="accountMotto" placeholder="Write your motto" autocomplete="off"/>
     </div>
-    <button class="logout-btn" id="accountLogout">로그아웃</button>
+    <button class="logout-btn" id="accountLogout">Logout</button>
   </div>
 </div>
 
 <!-- COLOR PAGE -->
 <div class="side-page" id="colorPage">
   <div class="side-header">
-    <span class="side-title">선택 색상 변경</span>
+    <span class="side-title">Color Setting</span>
     <span class="side-close" id="colorClose">✕</span>
   </div>
   <div class="side-body color-page-body">
-    <div class="account-label">프리셋</div>
+    <div class="account-label">Preset</div>
     <div class="color-swatches" id="colorSwatches"></div>
     <div class="color-custom-row">
-      <span class="color-custom-label">직접 입력</span>
+      <span class="color-custom-label">Custom</span>
       <input class="color-custom-input" id="colorCustomInput" placeholder="#e5b8d3" maxlength="7"/>
     </div>
   </div>
@@ -379,7 +379,7 @@ html,body{background:var(--bg);color:var(--text);font-family:Arial,sans-serif;fo
 <!-- CALENDAR PAGE -->
 <div class="side-page" id="calPage">
   <div class="side-header">
-    <span class="side-title">달력</span>
+    <span class="side-title">Calendar</span>
     <span class="side-close" id="calClose">✕</span>
   </div>
   <div class="side-body" style="padding:12px 0 0;display:flex;flex-direction:column;overflow:hidden">
@@ -450,7 +450,7 @@ function setG(k, g) { _cache[k] = g; persistAll(); }
 
 async function loginWithGoogle() {
   try { await signInWithPopup(auth, new GoogleAuthProvider()); }
-  catch(e) { alert('로그인 실패: ' + e.message); }
+  catch(e) { alert('Login Failed: ' + e.message); }
 }
 function logout() { signOut(auth); }
 
